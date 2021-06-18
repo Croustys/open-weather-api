@@ -1,6 +1,6 @@
-# Boronkay Voting web application for 2021 Kádi
+# Open Weather API UI practice
 Built using Snowpack, React, Typescript  
-Live Version: [vote2021kadi.netlify.app](https://vote2021kadi.netlify.app/)
+also learning react-bootstrap
 
 ## Installation
 Clone this repo
@@ -17,9 +17,5 @@ Start up dev server
 ```bash
  npm start
 ```
-
-## Requirements
-*Be a Boronkay Student* OR *be the owner of a Boronkay student email address*
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
