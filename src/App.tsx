@@ -4,9 +4,10 @@ import type { IWeatherApiResponse } from './interfaces/interfaces';
 type Props = any;
 type onKeyPressType = React.KeyboardEvent<HTMLInputElement>;
 
-import { fetchById, fetchByName } from './API';
+import { fetchByName } from './API';
 import { WeatherCard, Error } from './components';
 import { Button, FormControl, InputGroup } from 'react-bootstrap';
+import './App.css';
 
 const App = ({}: Props) => {
   const [weatherData, setWeatherData] = useState<IWeatherApiResponse>();
@@ -36,26 +37,32 @@ const App = ({}: Props) => {
     }
   }
   return (
-    <div>
+    <div className="outer-container">
       <div>
         <InputGroup className="mb-3">
           <FormControl
-            placeholder="Recipient's username"
-            aria-label="Recipient's username"
+            placeholder="Desired City's name"
+            aria-label="Desired City's name"
             aria-describedby="basic-addon2"
+            className="form-inp"
+            type="text"
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e: onKeyPressType) => handleEnter(e)}
           />
-          <Button
+          {/* <Button
             onClick={handleSubmit}
             variant="outline-secondary"
             id="button-addon2"
           >
-            Button
-          </Button>
+            Search
+          </Button> */}
         </InputGroup>
       </div>
-      {error || weatherData === undefined ? <Error /> : <WeatherCard {...weatherData!} />}
+      {error || weatherData === undefined ? (
+        <Error />
+      ) : (
+        <WeatherCard {...weatherData!} />
+      )}
     </div>
   );
 };

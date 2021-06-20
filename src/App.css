@@ -1,3 +1,14 @@
+body {
+  background: rgb(77, 0, 171);
+  background: linear-gradient(
+    90deg,
+    rgba(77, 0, 171, 1) 0%,
+    rgba(95, 39, 158, 1) 43%,
+    rgba(51, 78, 196, 1) 71%,
+    rgba(0, 69, 255, 1) 100%
+  );
+  color: white;
+}
 .App {
   text-align: center;
 }
@@ -52,4 +63,14 @@ p {
 .App-link {
   color: #61dafb;
 }
-
+.outer-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+}
+.form-inp {
+  max-width: 700px;
+  margin: auto;
+  color: black;
+  font-weight: 500;
+}

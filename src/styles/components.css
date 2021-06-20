@@ -2,7 +2,9 @@
 .container {
   width: 50%;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid white;
+  border-radius: 0.4em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
