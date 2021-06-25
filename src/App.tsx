@@ -33,7 +33,9 @@ const App = ({}: Props) => {
   }
   function handleEnter(e: onKeyPressType): void {
     if (e.key === 'Enter') {
-      handleSubmit();
+      if (input?.length === 0) {
+        setSearchName('Budapest');
+      } else handleSubmit();
     }
   }
   return (
@@ -58,11 +60,11 @@ const App = ({}: Props) => {
           </Button> */}
         </InputGroup>
       </div>
-      {error || weatherData === undefined ? (
+      {error ? (
         <Error />
-      ) : (
+      ) : weatherData !== undefined ? (
         <WeatherCard {...weatherData!} />
-      )}
+      ) : null}
     </div>
   );
 };

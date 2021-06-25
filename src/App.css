@@ -1,3 +1,6 @@
+* {
+  color: white;
+}
 body {
   background: rgb(77, 0, 171);
   background: linear-gradient(
@@ -11,28 +14,6 @@ body {
 }
 .App {
   text-align: center;
-}
-#landing {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background-color: hsl(0, 0%, 17%);
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-.App code {
-  background: #fff3;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-.App p {
-  margin: 0.4rem;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 h1 {
@@ -49,20 +30,6 @@ p {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 .outer-container {
   width: 90%;
   margin: auto;
@@ -71,6 +38,6 @@ p {
 .form-inp {
   max-width: 700px;
   margin: auto;
-  color: black;
-  font-weight: 500;
+  /* color: black; */
+  font-weight: 400;
 }
